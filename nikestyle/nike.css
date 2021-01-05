@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+nav {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+ul {
+    display: flex;
+}
+
+header {
+    background: url(../img/barrett-ward-cOJgO4Zzs-w-unsplash.jpg)no-repeat center center /cover;
+    height: 612px;
+    display: flex;
+    object-fit: cover;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+header a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #5c5b5b;
+}
+
+header ul a {
+    padding: 19px 24px 21px 28px;
+    display: inline-block;
+}
+
+header ul a:hover {
+    background: #c1bc45;
+    color: white;
+    transition: 0, 5s;
+}
+
+.logo {
+    margin-top: 10px;
+    margin-left: 17px;
+}
+
+.header-content {
+    flex-grow: 1;
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-content h1 {
+    font-size: 100px;
+    line-height: 72px;
+    color: #c1bc45;
+    margin-bottom: 18px;
+}
+
+.header-content p {
+    font-size: 18px;
+    line-height: 13px;
+    color: #5c5b5b;
+}
+
+.header-content span {
+    font-style: 18px;
+    line-height: 15px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-box {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 130px;
+    margin-top: 88px;
+    flex-wrap: wrap;
+}
+
+.left,
+.right {
+    width: 540px;
+
+}
+
+.left img {
+    margin-bottom: 21px;
+}
+
+.left h2 {
+    font-style: 20px;
+    line-height: 15px;
+    margin-bottom: 14px;
+    color: black;
+}
+
+.left span {
+    line-height: 18px;
+    font-style: 25px;
+    font-weight: bold;
+}
+
+
+
+
+.left p {
+    font-style: 15.67px;
+    color: #333333;
+    line-height: 27px;
+    letter-spacing: 0.5px;
+}
+
+.item {
+    display: flex;
+    border: 4px solid #aeaeae;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right img {
+    margin: 11px 38px 14px 23px;
+
+}
+
+.item__title {
+    font-style: 20px;
+    line-height: 15px;
+    margin-bottom: 16px;
+    margin-top: 15px;
+}
+
+.item__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #aeaeae;
+    letter-spacing: 0.02rem;
+}
+
+.item:hover {
+    border: 4px solid #f0efb6;
+}
+
+footer {
+    background: #eee9e9;
+    padding-top: 108px;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+footer ul a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4d4d4d;
+    margin: 0 25px;
+    margin-top: 19px;
+    display: inline-block;
+}
+
+footer ul a:hover {
+    color: #ff0000;
+    border-bottom: 4px solid #ff0000;
+}
+
+.footer__text {
+    font-style: 18px;
+    line-height: 13px;
+    color: #5a5a5a;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 64px;
+}
+
+/* media start */
+@media(max-width:1130px) {
+    .left img {
+        width: 100%;
+    }
+
+    .main-box {
+        justify-content: center;
+    }
+
+    span {
+        text-align: center;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+@media(max-width:1060px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+@media(max-width:500px) {
+    .item {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .item-desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item__text {
+        margin: 10px;
+    }
+}
+
+/* media end */
